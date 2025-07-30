@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="refresh" content="300"> <!-- Refresh every 5 minutes -->
-    <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden;
-      }
-      iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-    </style>
-  </head>
-  <body>
-    <marquee behavior="scroll" direction="left" scrollamount="6">
-  <p><strong>1. Workshop on climate adaptation</strong> — Aug 3</p>
-  <p><strong>2. Research release on air pollution</strong> — Aug 6</p>
-  <p><strong>3. New issue of Down To Earth is out</strong></p>
-  <p><strong>4. Join the Green Schools webinar</strong> — Aug 10</p>
-</marquee>
+<head>
+  <title>What's Happening at CSE</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      overflow: hidden;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .ticker {
+      position: absolute;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: #004d40;
+      color: white;
+      font-size: 32px;
+      padding: 20px 0;
+    }
+    .ticker-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 30s linear infinite;
+    }
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="ticker">
+    <div class="ticker-text">
+      📢 Workshop on climate adaptation – Aug 3 &nbsp;&nbsp; | &nbsp;&nbsp;
+      📖 New Down To Earth issue – Aug 5 &nbsp;&nbsp; | &nbsp;&nbsp;
+      🎓 Green Schools webinar – Aug 10 &nbsp;&nbsp; | &nbsp;&nbsp;
+      📰 Air pollution report released – Aug 15
+    </div>
+  </div>
     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTm5p5n1FYTho2dPp94Ma9zWTXF2uG3KF-5Fha2G1YgEjcGk9955V6J8jK-KIoHHBWglHBGscU4Al0d/pubembed?start=true&showSlideNumber=false&loop=true&delayms=5000" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
   </body>
 </html>
